@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microservices Dashboard & To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Microservices Dashboard</h1>
+
+    <div class="container">
+        <button onclick="navigateTo('5001')">Product Service</button>
+        <button onclick="navigateTo('5002')">Order Service</button>
+        <button onclick="navigateTo('5003')">Payment Service</button>
+        <button onclick="navigateTo('5004')">User Service</button>
+        <button onclick="navigateTo('5005')">Inventory Service</button>
+    </div>
+
+    <h2>To-Do List</h2>
+    <div class="todo-container">
+        <input type="text" id="todo-input" placeholder="Enter task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
